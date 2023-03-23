@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    username: root
+    password: 0011
+    url: jdbc:mysql://localhost:3306/kazaar
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    name: kazaar
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+server:
+  port: 8080
+  servlet:
+    context-path: /kazaar
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
